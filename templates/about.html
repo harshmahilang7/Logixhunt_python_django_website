@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - Logixhunt{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-indigo-700 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">About Logixhunt</h1>
+        <p class="text-xl md:text-2xl mb-8">Our Journey, Vision, and Commitment to Excellence</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center mb-16">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                <img src="{% static 'images/about-detail.jpg' %}" alt="About Logixhunt" class="rounded-lg shadow-xl">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Who We Are</h2>
+                <p class="text-gray-600 mb-6">
+                    Logixhunt is a dynamic software and website development company founded with a vision to provide technology solutions that make life easier for everyone. We are a group of young, enthusiastic minds with a passion for innovation, delivering the best web solutions for the past few years.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Our motto is "To Provide Technology for Everyone & Make Life Easy with Technology". This philosophy drives everything we do, from the projects we undertake to the way we interact with our clients.
+                </p>
+                <div class="bg-indigo-50 p-6 rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Our Mission</h3>
+                    <p class="text-gray-700">
+                        To empower businesses and individuals with cutting-edge technology solutions that are accessible, efficient, and tailored to their unique needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <p class="text-gray-600">
+                        We constantly explore new technologies and creative approaches to solve problems in unique ways.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Client-Centric</h3>
+                    <p class="text-gray-600">
+                        Our clients are at the heart of everything we do. We listen, understand, and deliver solutions that exceed expectations.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+                    <p class="text-gray-600">
+                        We strive for perfection in every project, ensuring quality and performance in all our deliverables.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Team</h2>
+            <p class="max-w-3xl mx-auto text-center text-gray-600 mb-12">
+                Our strength lies in our talented team of developers, designers, and digital marketers who bring diverse skills and perspectives to every project.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="{% static 'images/team1.jpg' %}" alt="Team Member" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Rahul Sharma</h3>
+                        <p class="text-indigo-600 mb-3">CEO & Founder</p>
+                        <p class="text-gray-600 text-sm">
+                            With over 10 years of experience in web technologies, Rahul leads the company with vision and passion.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="{% static 'images/team2.jpg' %}" alt="Team Member" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Priya Patel</h3>
+                        <p class="text-indigo-600 mb-3">Lead Developer</p>
+                        <p class="text-gray-600 text-sm">
+                            Full-stack developer specializing in modern JavaScript frameworks and backend technologies.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="{% static 'images/team3.jpg' %}" alt="Team Member" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Amit Singh</h3>
+                        <p class="text-indigo-600 mb-3">UI/UX Designer</p>
+                        <p class="text-gray-600 text-sm">
+                            Creates beautiful, intuitive interfaces that enhance user experience and engagement.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="{% static 'images/team4.jpg' %}" alt="Team Member" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Neha Gupta</h3>
+                        <p class="text-indigo-600 mb-3">Digital Marketing Head</p>
+                        <p class="text-gray-600 text-sm">
+                            Develops comprehensive digital strategies to maximize online presence and ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Start Your Project?</h2>
+        <p class="max-w-3xl mx-auto text-gray-600 mb-8">
+            Whether you need a website, software solution, or digital marketing services, we're here to help bring your vision to life.
+        </p>
+        <a href="{% url 'contact' %}" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Contact Us</a>
+    </div>
+</section>
+{% endblock %}

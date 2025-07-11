@@ -1,0 +1,420 @@
+<!-- 
+  @Author: Dastan Alam
+  @Date:   2025-07-10 06:35:26 PM   18:07
+  @Last Modified by:   Dastan Alam
+  @Last Modified time: 2025-07-11 11:20:33 AM   11:07
+-->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - Logixhunt | Premium Software & Web Development{% endblock %}
+
+{% block extra_head %}
+<!-- Font Awesome CDN -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+{% endblock %}
+
+{% block content %}
+
+<!-- Free Consultation Banner -->
+<div class="bg-blue-600 text-white py-2 px-4 text-center">
+  <p class="text-sm md:text-base"><i class="fas fa-gift mr-2"></i> <strong>Limited Time Offer:</strong> Get a <strong>FREE</strong> 60-minute strategy session ($300 value) when you mention this website! <a href="#contact" class="underline ml-2 font-semibold">Claim Now</a></p>
+</div>
+
+<!-- Light Hero Section -->
+<section class="relative bg-white text-gray-800 overflow-hidden">
+  <div class="container mx-auto px-6 py-28 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/2 mb-16 lg:mb-0">
+        <div class="flex items-center mb-6">
+          <i class="fas fa-code text-4xl text-blue-600 mr-3"></i>
+          <span class="text-2xl font-bold text-gray-800">LOGIXHUNT</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          Building <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700">Digital Experiences</span> That Matter
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-lg">
+          We craft high-performance websites and software solutions that drive business growth and engage users.
+        </p>
+        
+        <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 rounded-r">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-700">Try our <strong>FREE</strong> website audit to identify performance issues and SEO improvements!</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#free-audit" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 flex items-center justify-center">
+            <i class="fas fa-search mr-2"></i> Free Website Audit
+          </a>
+          <a href="{% url 'portfolio' %}" class="border-2 border-gray-200 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition flex items-center justify-center">
+            <i class="fas fa-eye mr-2"></i> View Work
+          </a>
+        </div>
+        <div class="mt-8 flex items-center">
+          <div class="flex -space-x-2 mr-4">
+            <img src="https://randomuser.me/api/portraits/women/43.jpg" class="w-10 h-10 rounded-full border-2 border-white">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-10 h-10 rounded-full border-2 border-white">
+          </div>
+          <div>
+            <div class="flex items-center text-yellow-400 mb-1">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-sm text-gray-600">Trusted by 100+ clients worldwide</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 lg:pl-12">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dashboard" class="w-full h-auto">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+            <div class="flex items-center">
+              <i class="fas fa-award text-yellow-400 text-2xl mr-3"></i>
+              <div>
+                <p class="font-bold">Free Resource:</p>
+                <p class="text-sm">Download our <strong>FREE</strong> "Website Launch Checklist"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Free Resources Section -->
+<section class="py-16 bg-gray-50" id="free-resources">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-blue-600 font-semibold tracking-wider uppercase"><i class="fas fa-gift mr-2"></i>Free Resources</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4">Grow Your Business With Our Free Tools</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        We believe in sharing knowledge. Here are some free resources to help you get started.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <div class="bg-blue-600 text-white p-4 text-center">
+          <i class="fas fa-file-alt text-3xl"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Website Requirements Template</h3>
+          <p class="text-gray-600 text-sm mb-4">Free downloadable template to plan your website project</p>
+          <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+            Download Now <i class="fas fa-download ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <div class="bg-green-600 text-white p-4 text-center">
+          <i class="fas fa-video text-3xl"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">SEO Basics Webinar</h3>
+          <p class="text-gray-600 text-sm mb-4">Free 45-minute training on SEO fundamentals</p>
+          <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+            Watch Now <i class="fas fa-play-circle ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <div class="bg-purple-600 text-white p-4 text-center">
+          <i class="fas fa-calculator text-3xl"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">ROI Calculator</h3>
+          <p class="text-gray-600 text-sm mb-4">Calculate potential returns on your digital investment</p>
+          <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+            Try Tool <i class="fas fa-external-link-alt ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <div class="bg-orange-500 text-white p-4 text-center">
+          <i class="fas fa-book-open text-3xl"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Developer's Handbook</h3>
+          <p class="text-gray-600 text-sm mb-4">Free ebook with best practices for web development</p>
+          <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+            Get Your Copy <i class="fas fa-book ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Free Audit Section -->
+<section class="py-16 bg-white" id="free-audit">
+  <div class="container mx-auto px-6">
+    <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-12 text-white shadow-xl">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Your FREE Website Audit</h2>
+          <p class="text-blue-100 mb-6 text-lg">
+            Our experts will analyze your website and provide a detailed report with actionable recommendations to improve performance, SEO, and conversions.
+          </p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-300 mr-3"></i>
+              <span>Performance analysis</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-300 mr-3"></i>
+              <span>SEO opportunities</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-300 mr-3"></i>
+              <span>Security check</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-300 mr-3"></i>
+              <span>UX improvements</span>
+            </li>
+          </ul>
+          <p class="text-sm text-blue-200">
+            <i class="fas fa-info-circle mr-2"></i> Normally $299 - <strong>FREE</strong> for a limited time
+          </p>
+        </div>
+        <div class="lg:w-1/2 bg-white rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Request Your Free Audit</h3>
+          <form class="space-y-4">
+            <div>
+              <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <input type="url" placeholder="Website URL" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition shadow-lg hover:shadow-xl">
+              <i class="fas fa-search mr-2"></i> Get Free Audit
+            </button>
+          </form>
+          <p class="text-xs text-gray-500 mt-4">
+            <i class="fas fa-lock mr-1"></i> We respect your privacy. No spam, ever.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Free Consultation Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+          <span class="text-blue-600 font-semibold tracking-wider uppercase">Free Consultation</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4">Let's Discuss Your Project</h2>
+          <p class="text-gray-600 mb-6">
+            Schedule a <strong>FREE</strong> 30-minute consultation with our experts. We'll help you:
+          </p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Clarify your project requirements</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Identify technical solutions</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Provide ballpark estimates</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Answer all your questions</span>
+            </li>
+          </ul>
+          <div class="flex items-center text-gray-600">
+            <i class="fas fa-clock text-blue-500 mr-3"></i>
+            <span>No obligation - Just honest advice</span>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Schedule Your Free Call</h3>
+            <form class="space-y-4">
+              <div>
+                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option>Preferred Consultation Time</option>
+                  <option>Morning (9am-12pm)</option>
+                  <option>Afternoon (1pm-5pm)</option>
+                  <option>Evening (6pm-8pm)</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition shadow-lg hover:shadow-xl">
+                <i class="fas fa-calendar-check mr-2"></i> Schedule Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Free Tools Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-blue-600 font-semibold tracking-wider uppercase"><i class="fas fa-tools mr-2"></i>Free Tools</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4">Helpful Resources For Your Business</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Try our free online tools to analyze and improve your digital presence.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-blue-300 transition-all hover:-translate-y-2">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+          <i class="fas fa-tachometer-alt"></i>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-3">Website Speed Test</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Check your website loading speed and get optimization recommendations.
+        </p>
+        <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+          Try Tool Now <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-blue-300 transition-all hover:-translate-y-2">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-3">SEO Checker</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          Free SEO analysis of your website with actionable improvement tips.
+        </p>
+        <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+          Analyze Your Site <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-blue-300 transition-all hover:-translate-y-2">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-3">Mobile-Friendly Test</h3>
+        <p class="text-gray-600 mb-4 text-sm">
+          See how well your website performs on mobile devices.
+        </p>
+        <a href="#" class="text-blue-600 font-medium text-sm inline-flex items-center">
+          Test Now <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Free Newsletter Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200 max-w-4xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+          <span class="text-blue-600 font-semibold tracking-wider uppercase"><i class="fas fa-envelope mr-2"></i>Newsletter</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4">Get Free Weekly Tips</h2>
+          <p class="text-gray-600 mb-6">
+            Join our newsletter and receive free weekly tips on web development, digital marketing, and business growth.
+          </p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Exclusive content</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Industry insights</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-blue-500 mr-3"></i>
+              <span>Special offers</span>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:w-1/2">
+          <form class="space-y-4">
+            <div>
+              <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option>I'm interested in...</option>
+                <option>Web Development</option>
+                <option>Mobile Apps</option>
+                <option>Digital Marketing</option>
+                <option>All of the above</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition shadow-lg hover:shadow-xl">
+              <i class="fas fa-paper-plane mr-2"></i> Subscribe Now
+            </button>
+          </form>
+          <p class="text-xs text-gray-500 mt-4">
+            <i class="fas fa-lock mr-1"></i> We'll never share your email. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Logixhunt Software Solutions</h1>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Transform your ideas into powerful digital solutions</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#contact" class="btn-primary">Get Started</a>
+            <a href="#services" class="btn-secondary">Our Services</a>
+        </div>
+    </div>
+</section>
+
+<div class="container mx-auto px-4 py-12">
+    <!-- Services Section -->
+    <section id="services" class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                <div class="text-indigo-600 mb-4">
+                    <i class="fas fa-laptop-code text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                <p class="text-gray-600">Custom websites and web applications</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                <div class="text-indigo-600 mb-4">
+                    <i class="fas fa-mobile-alt text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Mobile Apps</h3>
+                <p class="text-gray-600">iOS and Android applications</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                <div class="text-indigo-600 mb-4">
+                    <i class="fas fa-chart-line text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                <p class="text-gray-600">Boost your online presence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Career Opportunities</h2>
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h3 class="text-xl font-bold mb-4">Join Our Team</h3>
+            <div class="space-y-4">
+                <div class="border-b pb-4">
+                    <h4 class="font-bold">Frontend Developer</h4>
+                    <p class="text-gray-600">Full-time | Remote</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h4 class="font-bold">Backend Engineer</h4>
+                    <p class="text-gray-600">Full-time | On-site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

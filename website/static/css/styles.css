@@ -1,0 +1,57 @@
+/**
+ * @Author: Dastan Alam
+ * @Date:   2025-07-10 05:45:04 PM   17:07
+ * @Last Modified by:   Dastan Alam
+ * @Last Modified time: 2025-07-11 10:37:42 AM   10:07
+ */
+/* Custom styles to complement Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animation for buttons */
+.btn-hover-effect {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Service card hover effect */
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Team member hover effect */
+.team-member:hover img {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    transition: transform 0.5s ease;
+}
+
+/* Form input focus effect */
+.form-input:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
